@@ -1,0 +1,424 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-07 03:14:23.0754695 UTC
+
+interface day4-0.1.0.0-7USI4MQsS1HFcbVwywqYLQ:Lib 8001
+  interface hash: 70fec599371ddb8eab9d4e995969e3e3
+  ABI hash: 258c7d1752a9079c4c577947d80f4a28
+  export-list hash: 679df6e217bf675f0595cdb11fd26e8d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c8c420acb95085ec522d2ec8ef71e0a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.day4Answer
+  Lib.decryptName
+  Lib.frequency
+  Lib.getChecksum
+  Lib.getChecksum'
+  Lib.parseName
+  Lib.shiftCipher
+  Lib.sumSectorIds
+  Lib.testRealRoom
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:Data.List d711f98b49ef5d33e5b3d404631ed073
+import  -/  base-4.9.0.0:Data.OldList 3c899c6d8e6204063769214449ac0954
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:GHC.Real 011de9ca3282ad24a84e4e15f974f98e
+import  -/  base-4.9.0.0:GHC.Show 0b5845243cb2ec62b57dd6963d276ec6
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  base-4.9.0.0:System.IO c1068c4f4231e3198e330f99a58145b0
+import  -/  base-4.9.0.0:Text.Read 575a1becf4a56881b7def2de5a4c3776
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke:Data.List.Split 46e8ab9554123893f27696c65d88e63d
+import  -/  split-0.2.3.1@split-0.2.3.1-IJKK4pOCYGKud0jZImZke:Data.List.Split.Internals 21bb7a06dca9e01c6e2173d6643f3bae
+983ce8ee947829e57db7f3045e07547a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+9069f5fea8c49d80ead301650eb83d8c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+8c20588eed81001c239b85391810c1b5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "day4-0.1.0.0-7USI4MQsS1HFcbVwywqYLQ"#) -}
+ad0f61622d037c824745d0c0d1293757
+  $wgo :: [[GHC.Types.Char]] -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+7ab2af35764c3ffc39095408ba0e0c86
+  $wgo1 :: [[GHC.Types.Char]] -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+fa5729f7c9f6fcb895abebc520d7c7cb
+  $wgo2 ::
+    [(GHC.Types.Char, GHC.Types.Int)]
+    -> GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Inline: [0] -}
+7103dc7967cf5dd4f34bef64215e7a4f
+  $wlvl ::
+    GHC.Types.Char
+    -> GHC.Prim.Int#
+    -> GHC.Types.Char
+    -> GHC.Prim.Int#
+    -> GHC.Types.Ordering
+  {- Arity: 4, Strictness: <L,1*U(U)><S,U><L,1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Types.Char)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Types.Char)
+                   (ww3 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww1 ww3) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# ww1 ww3) of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# ww1 ww3) of wild2 {
+                             GHC.Types.False -> Lib.getChecksum'2
+                             GHC.Types.True -> GHC.Classes.$fOrdChar_$ccompare ww ww2 }
+                        GHC.Types.True -> GHC.Types.GT }
+                   GHC.Types.True -> GHC.Types.LT }) -}
+723ae6dd5d2acfe7f1ee21d38c28f375
+  $wparseName ::
+    [GHC.Types.Char]
+    -> (# [GHC.Types.Char], [GHC.Types.Char], [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ (w :: [GHC.Types.Char]) ->
+                 let {
+                   ds :: ([GHC.Types.Char], [GHC.Types.Char])
+                   = case Lib.decryptName8 w of wild {
+                       [] -> Lib.decryptName7
+                       : longname ds1
+                       -> case ds1 of wild1 {
+                            [] -> Lib.decryptName7
+                            : checkSum ds2
+                            -> case ds2 of wild2 {
+                                 [] -> (longname, checkSum) : ipv ipv1 -> Lib.decryptName7 } } }
+                 } in
+                 let {
+                   longname :: [GHC.Types.Char]
+                   = case ds of ds1 { (,) longname1 checkSum -> longname1 }
+                 } in
+                 (# case GHC.List.dropWhile
+                           @ GHC.Types.Char
+                           Lib.decryptName6
+                           (GHC.List.reverse @ GHC.Types.Char longname) of wild {
+                      [] -> case GHC.List.scanl2 ret_ty [GHC.Types.Char] of {}
+                      : ds1 xs
+                      -> GHC.List.reverse1
+                           @ GHC.Types.Char
+                           xs
+                           (GHC.Types.[] @ GHC.Types.Char) },
+                    GHC.List.reverse1
+                      @ GHC.Types.Char
+                      (GHC.List.takeWhile
+                         @ GHC.Types.Char
+                         Lib.decryptName6
+                         (GHC.List.reverse1
+                            @ GHC.Types.Char
+                            longname
+                            (GHC.Types.[] @ GHC.Types.Char)))
+                      (GHC.Types.[] @ GHC.Types.Char),
+                    case ds of ds1 { (,) longname1 checkSum ->
+                    case checkSum of wild {
+                      [] -> GHC.List.init2 @ GHC.Types.Char
+                      : x xs -> GHC.List.init1 @ GHC.Types.Char x xs } } #)) -}
+4edc7eb7ca93b8395eb29cf8154183c1
+  $wshiftCipher :: GHC.Prim.Char# -> GHC.Types.Int -> GHC.Types.Char
+  {- Arity: 2, Strictness: <S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Char#) (w :: GHC.Types.Int) ->
+                 case ww of wild {
+                   DEFAULT
+                   -> case Data.OldList.findIndex
+                             @ GHC.Types.Char
+                             (GHC.Classes.eqChar (GHC.Types.C# wild))
+                             Lib.decryptName_key of wild1 {
+                        GHC.Base.Nothing -> Lib.decryptName5
+                        GHC.Base.Just value
+                        -> case value of wild2 { GHC.Types.I# x ->
+                           case w of wild3 { GHC.Types.I# y ->
+                           case GHC.Classes.modInt# (GHC.Prim.+# x y) 26# of ww2 { DEFAULT ->
+                           GHC.List.$w!! @ GHC.Types.Char Lib.decryptName_key ww2 } } } }
+                   '-'# -> Lib.decryptName4 }) -}
+bb767fe953e0d1c01eeff99da73678c1
+  day4Answer :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.day4Answer1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+7277f7114d958f6a72c32c2c13cf9b38
+  day4Answer1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Lib.day4Answer4
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv2 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv2
+                        ipv of ds2 { (#,#) ipv1 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.CString.unpackAppendCString#
+                           "day4 part a: "#
+                           (case Lib.$wgo (Data.OldList.lines ipv3) of ww { DEFAULT ->
+                            case GHC.Show.$wshowSignedInt
+                                   0#
+                                   ww
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                        GHC.Types.True
+                        ipv1 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Lib.day4Answer3
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 Lib.day4Answer2 (Data.OldList.lines ipv3) ipv6 } } } }) -}
+5bc9c5f445368991cdc7cdd6a996020d
+  day4Answer2 ::
+    [[GHC.Types.Char]]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+54fdc09132bdf2572bcdba14cc51edd0
+  day4Answer3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "day4 part b: "#) -}
+5e1c97b771d71031675875c4e16c3843
+  day4Answer4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "input.txt"#) -}
+25c64ee31132a62ed5cb678b958f0c1f
+  decryptName :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (str :: [GHC.Types.Char]) ->
+                 case Lib.$wparseName str of ww { (#,,#) ww1 ww2 ww3 ->
+                 GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   (\ (y :: GHC.Types.Char) ->
+                    case y of ww4 { GHC.Types.C# ww5 ->
+                    Lib.$wshiftCipher
+                      ww5
+                      (case Text.Read.readEither6
+                              @ GHC.Types.Int
+                              (Text.ParserCombinators.ReadP.run
+                                 @ GHC.Types.Int
+                                 Lib.decryptName3
+                                 ww2) of wild {
+                         [] -> Lib.decryptName2
+                         : x ds
+                         -> case ds of wild1 {
+                              [] -> x : ipv ipv1 -> Lib.decryptName1 } }) })
+                   ww1 }) -}
+f4d66c1d0724615d7abb221b7754f2de
+  decryptName1 :: GHC.Types.Int
+  {- Strictness: x -}
+9b91414d94e171ed92abf9bdaea2ffc2
+  decryptName2 :: GHC.Types.Int
+  {- Strictness: x -}
+d1f27c0134ee7e296f80d0bdde4c7172
+  decryptName3 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: ((GHC.Read.$fReadInt3
+                    GHC.Read.$fReadInt_$sconvertInt
+                    Text.ParserCombinators.ReadPrec.minPrec)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0] <GHC.Types.Int>_R)
+                   @ GHC.Types.Int
+                   (Text.Read.readEither5 @ GHC.Types.Int)) -}
+44378d688fcd6c63feed46c4be2b6aa3
+  decryptName4 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ' '#) -}
+0b94126ad16b62f35e1e24aa5c325872
+  decryptName5 :: GHC.Types.Char
+  {- Strictness: x -}
+61c03a8d01c4993fb92d23b4e5cf7428
+  decryptName6 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Char) ->
+                 case ds of wild { GHC.Types.C# x ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Types.True '-'# -> GHC.Types.False } }) -}
+a5b7031617dd62d47475a5ddb33523d2
+  decryptName7 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: x -}
+128065cca1878c56b2473b166e31ec5c
+  decryptName8 :: [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Unfolding: (Data.List.Split.Internals.splitOn
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Lib.decryptName9) -}
+92d6ea93cd7392e147cc0bf2deb95dc8
+  decryptName9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "["#) -}
+308a86dcac02d7d7773dae4c4a2bf367
+  decryptName_key :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97# 122#) -}
+c7c029286a27b800fb5c4c636c535ffa
+  frequency :: GHC.Classes.Ord a => [a] -> [(a, GHC.Types.Int)]
+  {- Arity: 2,
+     Strictness: <L,U(1*U(1*C(C(U)),A),1*C(C1(U)),A,A,A,A,A,A)><S,1*U>,
+     Unfolding: (\ @ a ($dOrd :: GHC.Classes.Ord a) (eta :: [a]) ->
+                 GHC.Base.map
+                   @ [a]
+                   @ (a, GHC.Types.Int)
+                   (Lib.frequency2 @ a)
+                   (Data.OldList.groupBy
+                      @ a
+                      (GHC.Classes.== @ a (GHC.Classes.$p1Ord @ a $dOrd))
+                      (Data.OldList.sortBy @ a (GHC.Classes.compare @ a $dOrd) eta))) -}
+5c4c40e4cd49df535e4944f571d4bc1e
+  frequency2 :: [a] -> (a, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: [a]) ->
+                 (GHC.List.head @ a x,
+                  case GHC.List.$wlenAcc @ a x 0# of ww2 { DEFAULT ->
+                  GHC.Types.I# ww2 })) -}
+c4524f4ef53f6dea758139c5ad995659
+  getChecksum :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (str :: [GHC.Types.Char]) ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b1
+                      (c :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ (GHC.Types.Char, GHC.Types.Int)
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Char
+                         @ b1
+                         @ (GHC.Types.Char, GHC.Types.Int)
+                         c
+                         Lib.getChecksum1)
+                      n
+                      (Lib.getChecksum' str))) -}
+2562d2055ce06c420048a542759ed30c
+  getChecksum' ::
+    [GHC.Types.Char] -> [(GHC.Types.Char, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (str :: [GHC.Types.Char]) ->
+                 Data.OldList.sortBy
+                   @ (GHC.Types.Char, GHC.Types.Int)
+                   Lib.getChecksum'1
+                   (GHC.Base.map
+                      @ [GHC.Types.Char]
+                      @ (GHC.Types.Char, GHC.Types.Int)
+                      (Lib.frequency2 @ GHC.Types.Char)
+                      (Data.OldList.groupBy
+                         @ GHC.Types.Char
+                         GHC.Classes.eqChar
+                         (Data.OldList.sortBy
+                            @ GHC.Types.Char
+                            GHC.Classes.$fOrdChar_$ccompare
+                            (GHC.List.filter @ GHC.Types.Char Lib.decryptName6 str))))) -}
+c4c56a502ed32dc717f78870c874d231
+  getChecksum'1 ::
+    (GHC.Types.Char, GHC.Types.Int)
+    -> (GHC.Types.Char, GHC.Types.Int) -> GHC.Types.Ordering
+  {- Arity: 2,
+     Strictness: <S(LS(S)),1*U(1*U(U),1*U(U))><S(LS(S)),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (GHC.Types.Char, GHC.Types.Int))
+                   (w1 :: (GHC.Types.Char, GHC.Types.Int)) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww2 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { (,) ww6 ww7 ->
+                 case ww7 of ww8 { GHC.Types.I# ww9 ->
+                 Lib.$wlvl ww1 ww4 ww6 ww9 } } } }) -}
+d8d5313c58c513caa85993225102b4cf
+  getChecksum'2 :: GHC.Types.Ordering
+  {- Strictness: x -}
+819c46fb224321b166145f7191006dd8
+  getChecksum1 :: (GHC.Types.Char, GHC.Types.Int) -> GHC.Types.Char
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (GHC.Types.Char, GHC.Types.Int)) ->
+                 case ds of wild { (,) y ds1 -> y }) -}
+e578e1feea3c92c57bccde31a9eb6040
+  parseName ::
+    [GHC.Types.Char]
+    -> ([GHC.Types.Char], [GHC.Types.Char], [GHC.Types.Char])
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [GHC.Types.Char]) ->
+                 case Lib.$wparseName w of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+7f21cb5f1467bebdffc22a74e8d5da5d
+  shiftCipher :: GHC.Types.Char -> GHC.Types.Int -> GHC.Types.Char
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Char) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.C# ww1 -> Lib.$wshiftCipher ww1 w1 }) -}
+8bb0fcaa484cf2a26b63c4909e3bdf51
+  sumSectorIds :: GHC.Base.String -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Base.String) ->
+                 case Lib.$wgo1 (Data.OldList.lines w) of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+ee9967fa2d31d95c0ccc85596a3a4a5c
+  testRealRoom :: [GHC.Types.Char] -> GHC.Types.Int
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (str :: [GHC.Types.Char]) ->
+                 case Lib.$wparseName str of ww { (#,,#) ww1 ww2 ww3 ->
+                 case GHC.Base.eqString
+                        (Lib.$wgo2 (Lib.getChecksum' ww1) 5#)
+                        ww3 of wild {
+                   GHC.Types.False -> Lib.testRealRoom3
+                   GHC.Types.True
+                   -> case Text.Read.readEither6
+                             @ GHC.Types.Int
+                             (Text.ParserCombinators.ReadP.run
+                                @ GHC.Types.Int
+                                Lib.decryptName3
+                                ww2) of wild1 {
+                        [] -> Lib.testRealRoom2
+                        : x ds
+                        -> case ds of wild2 {
+                             [] -> x : ipv ipv1 -> Lib.testRealRoom1 } } } }) -}
+8362910698d0f9e17d9eef2d731eb211
+  testRealRoom1 :: GHC.Types.Int
+  {- Strictness: x -}
+50e9f01a555e7e0de26da88b31ea06c2
+  testRealRoom2 :: GHC.Types.Int
+  {- Strictness: x -}
+7762c594e3319c9ec14a3a7d20a39dc6
+  testRealRoom3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
