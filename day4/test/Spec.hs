@@ -1,6 +1,7 @@
 import Test.Hspec
 import Lib
 
+-- https://adventofcode.com/2016/day/4
 main :: IO ()
 main = hspec $ do
   describe "Lib" $ do 
@@ -20,16 +21,16 @@ main = hspec $ do
         parseName input `shouldBe` output
 
     describe "testRealRoom" $ do 
-      it "should be real 1" $ do
+      it "should be real room 1" $ do
         let input = "aaaaa-bbb-z-y-x-123[abxyz]"
         let output = 123
         testRealRoom input `shouldBe` output
-      it "should be real 1" $ do
+      it "should be real room 2" $ do
         let input = "nzydfxpc-rclop-qwzhpc-qtylyntyr-769[oshgk]"
         let output = 0 
         testRealRoom input `shouldBe` output
 
-      it "should be real 2" $ do
+      it "should be real room 3" $ do
         let input = "a-b-c-d-e-f-g-h-987[abcde]"
         let output = 987
         testRealRoom input `shouldBe` output

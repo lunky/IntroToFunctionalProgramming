@@ -1,0 +1,1 @@
+cat path = readFile path >>= putStrLn
